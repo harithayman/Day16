@@ -136,36 +136,9 @@ form.addEventListener("submit", function (e) {
     let passwordTest = passwordRegex.test(passwordField.value);
 
     if (fnameTest && emailTest && phoneTest && passwordTest) {
-
         alert("Signed Up Successfully");
-
-        window.location.href = "index.html";
-
+        window.location.href = "home.html";
     } else {
-
-        alert("Please Check Your Inputs");
-    }
-});
-
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    let fnameTest = nameRegex.test(fnameField.value);
-
-    let emailTest = emailRegex.test(emailField.value);
-
-    let phoneTest = phoneRegex.test(phoneField.value);
-
-    let passwordTest = passwordRegex.test(passwordField.value);
-
-    if (fnameTest && emailTest && phoneTest && passwordTest) {
-
-        alert("Signed Up Successfully");
-
-        window.location.href = "index.html";
-
-    } else {
-
         alert("Please Check Your Inputs");
     }
 });
